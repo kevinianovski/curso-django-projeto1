@@ -2,16 +2,19 @@
 
 
 <body>
-    <header class="main-header-container">
-        <div class="main-header container">
-            <h1>
-                <a href="/" class="main-logo">
-                    <i class="fas fa-user-graduate main-logo-icon"></i>
-                    <span class="main-logo-text">HOME</span>
-                </a>
-            </h1>
+    {% include "recipes/partials/header.html" %}
+
+    {% include "recipes/partials/search.html" %}
+
+
+    <main class="content-content-container">
+        <div class="main-content container main-content-list container">
+            {% include "recipes/partials/recipe.html" %}
         </div>
-    </header>
+    </main>
+    
+    {% include "recipes/partials/footer.html" %}
+
 </body>
 
 </html>
